@@ -1,0 +1,18 @@
+<style>
+       a
+       { 
+           border-right: lawngreen;
+        border-left:lawngreen
+        color: darkcyan;
+       transition: 2s;
+       }
+
+       a:hover {
+           color:red
+        }
+
+        .active 
+        {
+            background-color:  cornflowerblue;
+        }
+   </style>
