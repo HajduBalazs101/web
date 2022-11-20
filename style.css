@@ -63,3 +63,17 @@ transition: 1s;
       .active:hover {
         color: aquamarine;
       }
+      div.evszak {
+        margin: 35px;
+        float: left;
+        text-align: center;
+        transition: 1s;
+      }
+      div.evszak img {
+        width: 250px;
+        border: 2px solid black;
+        border-radius: 7%;
+      }
+      div.evszak:hover {
+        transform: scale(1.3);
+      }
