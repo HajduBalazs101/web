@@ -29,6 +29,7 @@ transition: 1s;
     body 
     {
         background-color: rgb(6, 114, 117);
+        min-height: 100vh;
 
 
     }
@@ -76,4 +77,17 @@ transition: 1s;
       }
       div.evszak:hover {
         transform: scale(1.3);
+      }
+      .divclass    {
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+        position: sticky;
+        top: 100%;
+        clear: left;  
+
+      }
+      .divclass p   {
+       color: whitesmoke;
+       
       }
