@@ -104,7 +104,7 @@ transition: 1s;
       }
       
       .menu a {
-        background-color: #06283D;
+        background-color: aquamarine;
         padding: 8px;
         margin-top: 7px;
         display: block;
@@ -119,7 +119,7 @@ transition: 1s;
       }
       
       .right {
-        background-color: #256D85;
+        background-color: aquamarine;
         float: left;
         width: 20%;
         padding: 15px;
