@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pitagorasz-tétel</title>
+  </head>
+  <body>
+    <img src="img/pita.png" alt="pita" title="háromszög">
+    <br>
+    <h1>Pitagorasz-tétel</h1>
+    <p>Adja meg a két oldal hosszát, és kiszámítjuk a hiányzó harmadik oldalt:</p>
+    <label for="a">a oldal hossza:</label>
+    <input type="number" id="a" name="a" oninput="calculate()">
+    <br><br>
+    <label for="b">b oldal hossza:</label>
+    <input type="number" id="b" name="b" oninput="calculate()">
+    <br><br>
+    <label for="c">c oldal hossza:</label>
+    <input type="number" id="c" name="c" oninput="calculate()">
+  </body>
+  <script>
+    function calculate() {
+      const aInput = document.getElementById("a");
+      const bInput = document.getElementById("b");
+      const cInput = document.getElementById("c");
+
+      let a = parseFloat(aInput.value);
+      let b = parseFloat(bInput.value);
+      let c = parseFloat(cInput.value);
+
+      if (isNaN(a)) {
+        aInput.value = Math.sqrt(c*c - b*b);
+        a = parseFloat(aInput.value);
+      }
+
+      if (isNaN(b)) {
+        bInput.value = Math.sqrt(c*c - a*a);
+        b = parseFloat(bInput.value);
+      }
+
+      if (isNaN(c)) {
+        cInput.value = Math.sqrt(a*a + b*b);
+        c = parseFloat(cInput.value);
+      }
+    }
+  </script>
+</html>
