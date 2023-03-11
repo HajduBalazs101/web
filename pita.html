@@ -8,6 +8,7 @@
     <img src="img/pita.png" alt="pita" title="háromszög">
     <br>
     <h1>Pitagorasz-tétel</h1>
+    <form>  
     <p>Adja meg a két oldal hosszát, és kiszámítjuk a hiányzó harmadik oldalt:</p>
     <label for="a">a oldal hossza:</label>
     <input type="number" id="a" name="a" oninput="calculate()">
@@ -17,6 +18,8 @@
     <br><br>
     <label for="c">c oldal hossza:</label>
     <input type="number" id="c" name="c" oninput="calculate()">
+    <input type="reset" value="Törlés">
+    </form>  
   </body>
   <script>
     function calculate() {
