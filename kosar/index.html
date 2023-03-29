@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p id="nev1">hamburger</p>
+        <input type="number" name="" id="szam1">
+        <input type="button" value="Hozzáad" onclick="ad(1)">
+    </form>
+    <form action="">
+        <p id="nev32">hotdog</p>
+        <input type="number" name="" id="szam32">
+        <input type="button" value="Hozzáad" onclick="ad(32)">
+    </form>
+    <form action="">
+        <p id="nev34312">ize</p>
+        <input type="number" name="" id="szam34312">
+        <input type="button" value="Hozzáad" onclick="ad(34312)">
+    </form>
+    <a href="kosar.html">kosár</a>
+    <br>
+    <br>
+<input type="number" name="ar" id="ar">
+<br>
+<span id="span1"></span>
+    <script>
+        var ar1= document.getElementById(ar);
+        var ham = 750;
+        var hotd = 450;
+        var iz= 450;
+        var hamburger1 = localStorage.getItem("hamburger");
+        var  hotdog1 = localStorage.getItem("hotdog");
+        var ize1 = localStorage.getItem("ize'");
+        ar1 = ham*hamburger1+hotd*hotdog1+iz*ize1;
+        
+        function ad(formIndex){
+            var szam = document.getElementById("szam"+formIndex);
+            var nev = document.getElementById("nev"+formIndex).innerHTML;
+               
+            localStorage.setItem(nev, szam.value)
+            
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
